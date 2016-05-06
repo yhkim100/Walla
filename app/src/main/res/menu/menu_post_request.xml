@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.jbuie.walla.PostRequestActivity">
+    <item
+        android:id="@+id/postRequest"
+        android:icon="@drawable/icon_done_check"
+        android:title="@string/sendMsg"
+        app:showAsAction="ifRoom" />
+</menu>

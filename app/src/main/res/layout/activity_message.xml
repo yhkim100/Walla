@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.jbuie.walla.MessageActivity"
+    android:orientation="vertical"
+    android:weightSum="20">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar_pmsg"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/action_bar_bg"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Private Chat"
+            android:typeface="serif"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:textColor="@color/colorAccent"
+            android:layout_gravity="center"
+            android:id="@+id/toolbar_title_pmsg" />
+     <!--   <TextView
+            android:id="@+id/toolbar_title_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:typeface="serif"
+            android:textStyle="bold"
+            android:text="username"
+            android:textSize="25dp"/> -->
+
+    </android.support.v7.widget.Toolbar>
+
+
+
+<!--    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:background="@android:color/darker_gray"
+        android:weightSum="10">
+        <ImageButton
+            android:id="@+id/user_profile_pic"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/franky"
+            android:layout_weight="2"
+            android:background="@android:color/transparent" />
+        <TextView
+            android:id="@+id/conversation_with_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Conversation with x"
+            android:gravity="center|left"/>
+    </LinearLayout> -->
+
+
+    <ListView
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:id="@+id/conversationBox"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="19"
+        android:layout_above="@+id/messageBox"
+        android:scrollIndicators="right">
+    </ListView>
+
+
+    <LinearLayout
+        android:id="@+id/messageBox"
+        android:layout_alignParentBottom="true"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/text_edit"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:singleLine="true"
+            android:hint="holla at em!"
+            android:inputType="textShortMessage"/>
+        <Button
+            android:id="@+id/sendMsg_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/sendMsg"/>
+    </LinearLayout>
+</LinearLayout>

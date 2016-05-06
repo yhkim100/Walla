@@ -1,0 +1,9 @@
+{
+  "firebase": "amber-torch-611",
+  "public": "app",
+  "ignore": [
+    "/Request/**/",
+    "**/.*",
+    "**/node_modules/**"
+  ]
+}
