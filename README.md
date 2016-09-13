@@ -1,3 +1,6 @@
+NOTE: SOURCE CODE OUT OF DATE - USED ONLY AS CODE SAMPLE
+CURRENT SOURCE CODE FOR WALLA HAS BEEN MOVED TO PRIVATE REPO FOR FUTURE DEVELOPMENT
+
 How to run App from a phyiscal android device.   
 1) Clone a copy of Master branch onto local drive.   
 2) Ensure device meets minimum requirements. App minimum SDK version 16, targetSDKVersion 23  
